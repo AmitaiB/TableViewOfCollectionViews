@@ -7,6 +7,8 @@
 //
 #define kShelvesCount 5
 #import "Main-TableViewController.h"
+#import "ShelfCollectionView.h"
+#import "TableViewCell-thatHas-CollectionView-inside.h"
 
 @interface Main_TableViewController ()
 
@@ -50,6 +52,8 @@ static NSString * const reuseIdentifier = @"collectionViewCellID";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
 
     // Configure the cell...
+    
+    
     
     return cell;
 }

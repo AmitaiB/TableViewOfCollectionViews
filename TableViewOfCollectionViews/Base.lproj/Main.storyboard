@@ -2,8 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OJo-pQ-b2i">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Table View Controller-->
@@ -21,55 +19,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cho-iF-7oA" id="Ayo-b8-asV">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="147.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4gk-4g-bHx" customClass="ShelfCollectionView">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xhV-sM-l67">
-                                                <size key="itemSize" width="50" height="50"/>
-                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            </collectionViewFlowLayout>
-                                            <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PS5-pT-NxA">
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    </view>
-                                                </collectionViewCell>
-                                            </cells>
-                                        </collectionView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="topMargin" secondItem="4gk-4g-bHx" secondAttribute="top" id="CKL-3c-2KF"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="4gk-4g-bHx" secondAttribute="bottom" id="IdO-sF-eD6"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="4gk-4g-bHx" secondAttribute="trailing" id="ffw-KH-Ppi"/>
-                                        <constraint firstAttribute="leadingMargin" secondItem="4gk-4g-bHx" secondAttribute="leading" id="miY-7G-5xs"/>
-                                    </constraints>
-                                    <variation key="default">
-                                        <mask key="subviews">
-                                            <exclude reference="4gk-4g-bHx"/>
-                                        </mask>
-                                        <mask key="constraints">
-                                            <exclude reference="CKL-3c-2KF"/>
-                                            <exclude reference="IdO-sF-eD6"/>
-                                            <exclude reference="ffw-KH-Ppi"/>
-                                            <exclude reference="miY-7G-5xs"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="widthClass=compact">
-                                        <mask key="subviews">
-                                            <include reference="4gk-4g-bHx"/>
-                                        </mask>
-                                        <mask key="constraints">
-                                            <include reference="CKL-3c-2KF"/>
-                                            <include reference="IdO-sF-eD6"/>
-                                            <include reference="ffw-KH-Ppi"/>
-                                            <include reference="miY-7G-5xs"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
