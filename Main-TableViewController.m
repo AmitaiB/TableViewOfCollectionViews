@@ -5,6 +5,7 @@
 //  Created by Amitai Blickstein on 9/24/15.
 //  Copyright © 2015 Amitai Blickstein, LLC. All rights reserved.
 //
+#define kShelvesCount 5
 #import "Main-TableViewController.h"
 
 @interface Main_TableViewController ()
@@ -15,20 +16,18 @@
 
 @implementation Main_TableViewController
 
+static NSString * const reuseIdentifier = @"collectionViewCellID";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.bookcase = @{@"shelvesCount" : @5,
-                      @"width_cm": @55,
-                      @"shelf ID#" : @1,
-                      @"shelves" : @[]
-                      };
+
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,24 +38,33 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [self.bookcase[@"shelvesCount"] integerValue];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+
     // Configure the cell...
     
     return cell;
 }
-*/
+
+-(NSDictionary *)bookcase {
+    if (_bookcase == nil) {
+        NSMutableArray *temp = [NSMutableArray arrayWithCapacity:kShelvesCount];
+        _bookcase = @{@"shelvesCount" : @(kShelvesCount),
+                      @"width_cm"     : @55,
+                      @"shelf ID#"    : @1,
+                      @"shelves"      : temp
+                      };
+    }
+    return _bookcase;
+}
 
 /*
 // Override to support conditional editing of the table view.

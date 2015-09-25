@@ -8,11 +8,12 @@
 
 #import "Sub-Shelf-CollectionViewController.h"
 
-@interface Sub_Shelf_CollectionViewController ()
+
+@interface Shelf_CollectionViewController ()
 
 @end
 
-@implementation Sub_Shelf_CollectionViewController
+@implementation Shelf_CollectionViewController
 
 static NSString * const reuseIdentifier = @"Cell";
 

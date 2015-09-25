@@ -15,14 +15,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="Cho-iF-7oA">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="collectionViewCellID" rowHeight="148" id="Cho-iF-7oA" customClass="TableViewCell_thatHas_CollectionView_inside">
                                 <rect key="frame" x="0.0" y="28" width="600" height="148"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cho-iF-7oA" id="Ayo-b8-asV">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="147.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4gk-4g-bHx">
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4gk-4g-bHx" customClass="ShelfCollectionView">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xhV-sM-l67">
                                                 <size key="itemSize" width="50" height="50"/>

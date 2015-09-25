@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380DFD231BB5EE7B00A02D86 /* TableViewCell-thatHas-CollectionView-inside.m in Sources */ = {isa = PBXBuildFile; fileRef = 380DFD221BB5EE7B00A02D86 /* TableViewCell-thatHas-CollectionView-inside.m */; settings = {ASSET_TAGS = (); }; };
+		380DFD261BB5F24D00A02D86 /* ShelfCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 380DFD251BB5F24D00A02D86 /* ShelfCollectionView.m */; settings = {ASSET_TAGS = (); }; };
 		382A83FC1BB4DCD4008860CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A83FB1BB4DCD4008860CF /* main.m */; };
 		382A83FF1BB4DCD4008860CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A83FE1BB4DCD4008860CF /* AppDelegate.m */; };
 		382A84051BB4DCD4008860CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 382A84031BB4DCD4008860CF /* Main.storyboard */; };
 		382A84071BB4DCD4008860CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382A84061BB4DCD4008860CF /* Assets.xcassets */; };
 		382A840A1BB4DCD4008860CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 382A84081BB4DCD4008860CF /* LaunchScreen.storyboard */; };
 		382A84131BB4DF5F008860CF /* Main-TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A84121BB4DF5F008860CF /* Main-TableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		382A84161BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A84151BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		382A841B1BB4E006008860CF /* HomeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A841A1BB4E006008860CF /* HomeLibrary.m */; settings = {ASSET_TAGS = (); }; };
 		382A841E1BB4E08C008860CF /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A841D1BB4E08C008860CF /* Book.m */; settings = {ASSET_TAGS = (); }; };
 		382A84211BB4E118008860CF /* Library-RandomGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A84201BB4E118008860CF /* Library-RandomGenerator.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		380DFD211BB5EE7B00A02D86 /* TableViewCell-thatHas-CollectionView-inside.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TableViewCell-thatHas-CollectionView-inside.h"; sourceTree = "<group>"; };
+		380DFD221BB5EE7B00A02D86 /* TableViewCell-thatHas-CollectionView-inside.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TableViewCell-thatHas-CollectionView-inside.m"; sourceTree = "<group>"; };
+		380DFD241BB5F24D00A02D86 /* ShelfCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShelfCollectionView.h; sourceTree = "<group>"; };
+		380DFD251BB5F24D00A02D86 /* ShelfCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShelfCollectionView.m; sourceTree = "<group>"; };
 		382A83F71BB4DCD4008860CF /* TableViewOfCollectionViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewOfCollectionViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A83FB1BB4DCD4008860CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		382A83FD1BB4DCD4008860CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,8 +35,6 @@
 		382A840B1BB4DCD4008860CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		382A84111BB4DF5F008860CF /* Main-TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Main-TableViewController.h"; path = "../Main-TableViewController.h"; sourceTree = "<group>"; };
 		382A84121BB4DF5F008860CF /* Main-TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Main-TableViewController.m"; path = "../Main-TableViewController.m"; sourceTree = "<group>"; };
-		382A84141BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sub-Shelf-CollectionViewController.h"; sourceTree = "<group>"; };
-		382A84151BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Sub-Shelf-CollectionViewController.m"; sourceTree = "<group>"; };
 		382A84191BB4E006008860CF /* HomeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeLibrary.h; sourceTree = "<group>"; };
 		382A841A1BB4E006008860CF /* HomeLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeLibrary.m; sourceTree = "<group>"; };
 		382A841C1BB4E08C008860CF /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
@@ -51,6 +54,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		380DFD201BB5EE3A00A02D86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				380DFD211BB5EE7B00A02D86 /* TableViewCell-thatHas-CollectionView-inside.h */,
+				380DFD221BB5EE7B00A02D86 /* TableViewCell-thatHas-CollectionView-inside.m */,
+				380DFD241BB5F24D00A02D86 /* ShelfCollectionView.h */,
+				380DFD251BB5F24D00A02D86 /* ShelfCollectionView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		382A83EE1BB4DCD4008860CF = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				382A84181BB4DFCC008860CF /* Models */,
+				380DFD201BB5EE3A00A02D86 /* Views */,
 				382A84171BB4DFC1008860CF /* ViewControllers */,
 				382A83FD1BB4DCD4008860CF /* AppDelegate.h */,
 				382A83FE1BB4DCD4008860CF /* AppDelegate.m */,
@@ -96,8 +111,6 @@
 			children = (
 				382A84111BB4DF5F008860CF /* Main-TableViewController.h */,
 				382A84121BB4DF5F008860CF /* Main-TableViewController.m */,
-				382A84141BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.h */,
-				382A84151BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -185,8 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				382A84161BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m in Sources */,
+				380DFD261BB5F24D00A02D86 /* ShelfCollectionView.m in Sources */,
 				382A841B1BB4E006008860CF /* HomeLibrary.m in Sources */,
+				380DFD231BB5EE7B00A02D86 /* TableViewCell-thatHas-CollectionView-inside.m in Sources */,
 				382A84131BB4DF5F008860CF /* Main-TableViewController.m in Sources */,
 				382A83FF1BB4DCD4008860CF /* AppDelegate.m in Sources */,
 				382A84211BB4E118008860CF /* Library-RandomGenerator.m in Sources */,
@@ -338,6 +352,7 @@
 				382A84101BB4DCD4008860CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

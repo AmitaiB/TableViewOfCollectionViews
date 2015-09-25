@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Sub_Shelf_CollectionViewController : UICollectionViewController
+@interface Shelf_CollectionViewController : UICollectionViewController
 
 @end
