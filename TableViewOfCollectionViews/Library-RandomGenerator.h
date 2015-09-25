@@ -1,5 +1,5 @@
 //
-//  HomeLibrary.h
+//  Library-RandomGenerator.h
 //  TableViewOfCollectionViews
 //
 //  Created by Amitai Blickstein on 9/24/15.
@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HomeLibrary : NSObject
+@class HomeLibrary;
+@interface Library_RandomGenerator : NSObject
 
-@property (nonatomic, strong) NSArray *books;
++(HomeLibrary*)generateRandomLibrary;
+
++(NSString*)gibberishGenerator;
 
 @end

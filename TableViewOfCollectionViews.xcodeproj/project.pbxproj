@@ -15,6 +15,8 @@
 		382A84131BB4DF5F008860CF /* Main-TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A84121BB4DF5F008860CF /* Main-TableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		382A84161BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A84151BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		382A841B1BB4E006008860CF /* HomeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A841A1BB4E006008860CF /* HomeLibrary.m */; settings = {ASSET_TAGS = (); }; };
+		382A841E1BB4E08C008860CF /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A841D1BB4E08C008860CF /* Book.m */; settings = {ASSET_TAGS = (); }; };
+		382A84211BB4E118008860CF /* Library-RandomGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A84201BB4E118008860CF /* Library-RandomGenerator.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		382A84151BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Sub-Shelf-CollectionViewController.m"; sourceTree = "<group>"; };
 		382A84191BB4E006008860CF /* HomeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeLibrary.h; sourceTree = "<group>"; };
 		382A841A1BB4E006008860CF /* HomeLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeLibrary.m; sourceTree = "<group>"; };
+		382A841C1BB4E08C008860CF /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		382A841D1BB4E08C008860CF /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		382A841F1BB4E118008860CF /* Library-RandomGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Library-RandomGenerator.h"; sourceTree = "<group>"; };
+		382A84201BB4E118008860CF /* Library-RandomGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Library-RandomGenerator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 			children = (
 				382A84191BB4E006008860CF /* HomeLibrary.h */,
 				382A841A1BB4E006008860CF /* HomeLibrary.m */,
+				382A841C1BB4E08C008860CF /* Book.h */,
+				382A841D1BB4E08C008860CF /* Book.m */,
+				382A841F1BB4E118008860CF /* Library-RandomGenerator.h */,
+				382A84201BB4E118008860CF /* Library-RandomGenerator.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -179,6 +189,8 @@
 				382A841B1BB4E006008860CF /* HomeLibrary.m in Sources */,
 				382A84131BB4DF5F008860CF /* Main-TableViewController.m in Sources */,
 				382A83FF1BB4DCD4008860CF /* AppDelegate.m in Sources */,
+				382A84211BB4E118008860CF /* Library-RandomGenerator.m in Sources */,
+				382A841E1BB4E08C008860CF /* Book.m in Sources */,
 				382A83FC1BB4DCD4008860CF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
