@@ -5,10 +5,11 @@
 //  Created by Amitai Blickstein on 9/24/15.
 //  Copyright © 2015 Amitai Blickstein, LLC. All rights reserved.
 //
-
 #import "Main-TableViewController.h"
 
 @interface Main_TableViewController ()
+
+@property (nonatomic, strong) NSDictionary *bookcase;
 
 @end
 
@@ -16,6 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.bookcase = @{@"shelvesCount" : @5,
+                      @"width_cm": @55,
+                      @"shelf ID#" : @1,
+                      @"shelves" : @[]
+                      };
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
