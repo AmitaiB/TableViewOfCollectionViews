@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Sub-Shelf-CollectionViewController.h
 //  TableViewOfCollectionViews
 //
 //  Created by Amitai Blickstein on 9/24/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface Sub_Shelf_CollectionViewController : UICollectionViewController
 
 @end
-

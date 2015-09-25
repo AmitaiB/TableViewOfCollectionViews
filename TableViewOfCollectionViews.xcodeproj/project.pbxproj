@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		382A83FC1BB4DCD4008860CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A83FB1BB4DCD4008860CF /* main.m */; };
 		382A83FF1BB4DCD4008860CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A83FE1BB4DCD4008860CF /* AppDelegate.m */; };
-		382A84021BB4DCD4008860CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A84011BB4DCD4008860CF /* ViewController.m */; };
 		382A84051BB4DCD4008860CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 382A84031BB4DCD4008860CF /* Main.storyboard */; };
 		382A84071BB4DCD4008860CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382A84061BB4DCD4008860CF /* Assets.xcassets */; };
 		382A840A1BB4DCD4008860CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 382A84081BB4DCD4008860CF /* LaunchScreen.storyboard */; };
+		382A84131BB4DF5F008860CF /* Main-TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A84121BB4DF5F008860CF /* Main-TableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		382A84161BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A84151BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		382A841B1BB4E006008860CF /* HomeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A841A1BB4E006008860CF /* HomeLibrary.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,16 @@
 		382A83FB1BB4DCD4008860CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		382A83FD1BB4DCD4008860CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		382A83FE1BB4DCD4008860CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		382A84001BB4DCD4008860CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		382A84011BB4DCD4008860CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		382A84041BB4DCD4008860CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		382A84061BB4DCD4008860CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		382A84091BB4DCD4008860CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		382A840B1BB4DCD4008860CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		382A84111BB4DF5F008860CF /* Main-TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Main-TableViewController.h"; path = "../Main-TableViewController.h"; sourceTree = "<group>"; };
+		382A84121BB4DF5F008860CF /* Main-TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Main-TableViewController.m"; path = "../Main-TableViewController.m"; sourceTree = "<group>"; };
+		382A84141BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sub-Shelf-CollectionViewController.h"; sourceTree = "<group>"; };
+		382A84151BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Sub-Shelf-CollectionViewController.m"; sourceTree = "<group>"; };
+		382A84191BB4E006008860CF /* HomeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeLibrary.h; sourceTree = "<group>"; };
+		382A841A1BB4E006008860CF /* HomeLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +64,11 @@
 		382A83F91BB4DCD4008860CF /* TableViewOfCollectionViews */ = {
 			isa = PBXGroup;
 			children = (
+				382A84181BB4DFCC008860CF /* Models */,
+				382A84171BB4DFC1008860CF /* ViewControllers */,
 				382A83FD1BB4DCD4008860CF /* AppDelegate.h */,
 				382A83FE1BB4DCD4008860CF /* AppDelegate.m */,
-				382A84001BB4DCD4008860CF /* ViewController.h */,
-				382A84011BB4DCD4008860CF /* ViewController.m */,
 				382A84031BB4DCD4008860CF /* Main.storyboard */,
-				382A84061BB4DCD4008860CF /* Assets.xcassets */,
-				382A84081BB4DCD4008860CF /* LaunchScreen.storyboard */,
-				382A840B1BB4DCD4008860CF /* Info.plist */,
 				382A83FA1BB4DCD4008860CF /* Supporting Files */,
 			);
 			path = TableViewOfCollectionViews;
@@ -74,9 +77,32 @@
 		382A83FA1BB4DCD4008860CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				382A84061BB4DCD4008860CF /* Assets.xcassets */,
+				382A84081BB4DCD4008860CF /* LaunchScreen.storyboard */,
+				382A840B1BB4DCD4008860CF /* Info.plist */,
 				382A83FB1BB4DCD4008860CF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		382A84171BB4DFC1008860CF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				382A84111BB4DF5F008860CF /* Main-TableViewController.h */,
+				382A84121BB4DF5F008860CF /* Main-TableViewController.m */,
+				382A84141BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.h */,
+				382A84151BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		382A84181BB4DFCC008860CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				382A84191BB4E006008860CF /* HomeLibrary.h */,
+				382A841A1BB4E006008860CF /* HomeLibrary.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				382A84021BB4DCD4008860CF /* ViewController.m in Sources */,
+				382A84161BB4DFA6008860CF /* Sub-Shelf-CollectionViewController.m in Sources */,
+				382A841B1BB4E006008860CF /* HomeLibrary.m in Sources */,
+				382A84131BB4DF5F008860CF /* Main-TableViewController.m in Sources */,
 				382A83FF1BB4DCD4008860CF /* AppDelegate.m in Sources */,
 				382A83FC1BB4DCD4008860CF /* main.m in Sources */,
 			);
