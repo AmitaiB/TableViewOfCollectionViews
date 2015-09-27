@@ -9,6 +9,7 @@
 #import "Main-TableViewController.h"
 #import "ShelfCollectionView.h"
 #import "TableViewCell-thatHas-CollectionView-inside.h"
+#import "HomeLibrary.h"
 
 @interface Main_TableViewController ()
 
@@ -20,9 +21,29 @@
 
 static NSString * const reuseIdentifier = @"collectionViewCellID";
 
+#pragma mark -
+#pragma mark - === Lifecycle ==
+
+-(NSDictionary *)bookcase {
+    if (_bookcase == nil) {
+        NSMutableArray *arrayOfCollectionViews = [NSMutableArray new];
+        for (NSUInteger i = 0; i < kShelvesCount; i++) {
+            [arrayOfCollectionViews addObject:[UICollectionView new]];
+        }
+        
+        _bookcase = @{@"shelvesCount" : @(kShelvesCount),
+                      @"width_cm"     : @55,
+                      @"shelf ID#"    : @1,
+                      @"shelves"      : arrayOfCollectionViews
+                      };
+    }
+    return _bookcase;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [self preCacheLibraryData];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -32,12 +53,38 @@ static NSString * const reuseIdentifier = @"collectionViewCellID";
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)preCacheLibraryData {
+    HomeLibrary *library = [Library_RandomGenerator generateRandomLibrary];
+        ///Select current book.
+        ///Check if its thickness goes over the shelf-width.
+        ///If no, add to array, increment Xposition, and repeat.
+        ///If yes, increment shelves, reset Xposition to 0, and repeat.
+        ///Stop when we run out of space(shelves) or books.
+    
+    CGFloat Xposition = 0.0f;
+    CGFloat totalThicknessThisShelf = 55.0f;
+    NSMutableArray *tempShelf = [NSMutableArray new];
+    NSUInteger currentShelf = 0;
+    
+    for (Book *book in library.books) {
+        if (Xposition + [book.thickness_cm floatValue] > totalThicknessThisShelf) {
+            currentShelf += 1;
+            Xposition = 0.0; //TODO: add error check for reaching end of shelf...
+            [self.bookcase[@"shelves"][currentShelf] addObject:book];
+        } else {
+            Xposition += [book.thickness_cm floatValue];
+            [self.bookcase[@"shelves"][currentShelf] addObject:book];
+        }
+    }
+    
+    tempShelf addObject:library.books[0]
+    
+    self.bookcase[@"shelves"][0];
 }
 
-#pragma mark - Table view data source
+
+#pragma mark -
+#pragma mark - === Table view data source ===
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -49,69 +96,27 @@ static NSString * const reuseIdentifier = @"collectionViewCellID";
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+    TableViewCell_thatHas_CollectionView_inside *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
 
     // Configure the cell...
     
+    cell.shelfCollectionView = self.bookcase[@"shelves"][indexPath.row];
+    cell.shelfCollectionView.delegate = self;
     
     
     return cell;
 }
 
--(NSDictionary *)bookcase {
-    if (_bookcase == nil) {
-        NSMutableArray *temp = [NSMutableArray arrayWithCapacity:kShelvesCount];
-        _bookcase = @{@"shelvesCount" : @(kShelvesCount),
-                      @"width_cm"     : @55,
-                      @"shelf ID#"    : @1,
-                      @"shelves"      : temp
-                      };
-    }
-    return _bookcase;
+#pragma mark -
+#pragma mark - === UICollectionView DataSource ===
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

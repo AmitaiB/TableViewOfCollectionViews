@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Library-RandomGenerator.h"
+#import "Book.h"
 
 @interface HomeLibrary : NSObject
 

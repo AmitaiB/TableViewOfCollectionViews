@@ -10,4 +10,6 @@
 
 @interface TableViewCell_thatHas_CollectionView_inside : UITableViewCell
 
+@property (nonatomic, strong) UICollectionView *shelfCollectionView;
+
 @end
